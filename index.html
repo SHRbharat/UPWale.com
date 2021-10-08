@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPWale|Home</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body onload="myFunction()">
+
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+    </div>
+
+
+    <!-- header -->
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="index.html" class="mb-logo">UPWale.com</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="index.html" class="logo">UPWale.com</a>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="login.html"><i class='bx bx-log-out-circle'></i></a></li>
+						<li><a href="login.html"><i class='bx bx-user-circle'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="index.html">Home</a></li>
+						<!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="products.html">Filters<i class='bx bxs-chevron-down'></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-4 col-md-12 col-sm-12">
+                                        <div class="box">
+											<span class="filter-header">Types</span>
+											<ul class="filter-list">
+												<li><a href="products.html"  onclick="setFilter('Type','Earbuds')">Earbuds</a></li>
+												<li><a href="products.html"  onclick="setFilter('Type','Wireless Earbuds')">Wireless earbuds</a></li>
+												<li><a href="products.html"  onclick="setFilter('Type','Headphones')">Headphones</a></li>
+												<li><a href="products.html"  onclick="setFilter('Type','Wireless Headphones')">Wireless headphones</a></li>
+											</ul>
+										</div>
+                                    </div>
+                                    <div class="col-4 col-md-12 col-sm-12">
+                                        <div class="box">
+											<span class="filter-header">Brands</span>
+											<ul class="filter-list">
+												<li><a href="products.html" onclick="setFilter('Brand','Boat')">Boat</a></li>
+												<li><a href="products.html" onclick="setFilter('Brand','Sony')">Sony</a></li>
+												<li><a href="products.html" onclick="setFilter('Brand','Philips')">Philips</a></li>
+												<li><a href="products.html"  onclick="setFilter('Brand','Beats')">Beats</a></li>
+											</ul>
+										</div>
+                                    </div>
+                                    <div class="col-4 col-md-12 col-sm-12">
+                                        <div class="box">
+											<span class="filter-header">Price range</span>
+											<ul class="filter-list">
+												<li><a href="products.html" onclick="setFilter('Price','1')">below 1000</a></li>
+												<li><a href="products.html" onclick="setFilter('Price','2')">1000-3000</a></li>
+												<li><a href="products.html" onclick="setFilter('Price','3')">3000-6000</a></li>
+												<li><a href="products.html" onclick="setFilter('Price','4')">above 6000</a></li>
+											</ul>
+										</div>
+                                    </div>
+								</div>
+                             </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+
+    <div class="marquee-text">
+        <p class="text-center" style="font-size: 29px;color: white">
+          <marquee scrollamount="10">
+            20% OFF ON YOUR FIRST ORDER!🥳 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FREE SHIPPING WITH EXCLUSIVE REWARDS🎁 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FINE ENGINEERING ONLY FOR YOUR EARS.🎧
+          </marquee>
+        </p>
+      </div>
+	
+      <div class="mp4-video-inner">
+        <div class="row mp4-video-row">
+          <div class="col-12 myVideoSection">
+            <div class="video_section">
+                <video id="myVideoSection" height="650" playsinline loop controls preload="none" muted autoplay>
+                  <source src="images/Sony Headphones WF-XB700 Official Product Video.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+
+
+    <!-- SLIDESHOW-->
+    <div class="hero">
+        <div class="slider">
+            <div class="container">
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                Sony WF-SP800N WIRELESS
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Elite Design
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Noise Cancellation: When you need that special playlist to take your workout to the next level, NC blocks out distractions, like the sounds of the gym or the street, so it's just you and the beat.Extra Bass: WF-SP800N features EXTRA BASS for seriously powerful, punchy low-end sound. Your favourite basslines never sounded so good
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover"  onclick="transferKey('07')">shop now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img left-right">
+                        <img src="images/sony/Sony WF-SP800N WIRELESS-1.png">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                Beats Ep Wired
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Enhance Gaming
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Beats EP wired on-ear headphone delivers masterfully tuned sound..Durable, lightweight design reinforced with stainless steel
+							</p>
+                            <div class="top-down trans-delay-0-6">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover"  onclick="transferKey('12')">shop now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img right-left">
+                        <img src="images/beats/Beats Ep Wired-1.png">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide active">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                Boat Rockerz 510 Wireless
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Next-gen design
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Its 50mm drivers promises to deliver a thumping sound which you could never have imagined.
+                            </p>
+                            <div class="top-down trans-delay-0-6">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover"  onclick="transferKey('03')">shop now</button></a>     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img top-down">
+                        <img src="images/boat/boAt Rockerz 510 Wireless-1.png">
+                    </div>
+                </div>
+                <!-- end slide item -->
+            </div>
+            <!-- slider controller -->
+            <button class="slide-controll slide-next">
+                <i class='bx bxs-chevron-right'></i>
+            </button>
+            <button class="slide-controll slide-prev">
+                <i class='bx bxs-chevron-left'></i>
+            </button>
+            <!-- end slider controller -->
+        </div>
+    </div>
+    <!--END SLIDESHOW-->
+
+    <!-- promotion section -->
+    <div class="promotion">
+        <div class="row">
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>Wireless Headphones</h3>
+                        <a href="products.html"  onclick="setFilter('Type','Wireless Headphones')"><button class="btn-flat btn-hover"><span>shop collection</span></button></a>
+                    </div>
+                    <img src="images/philips/Philips TAPH802BK WIRELESS-1.png">
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>SONY <br> Exclusive</h3>
+                        <a href="products.html" onclick="setFilter('Brand','Sony')"><button class="btn-flat btn-hover"><span>shop collection</span></button></a>
+                    </div>
+                    <img src="images/sony/Sony WF-SP800N WIRELESS-1.png">
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>Wireless <br> Earbuds</h3>
+                        <a href="products.html"  onclick="setFilter('Type','Wireless Earbuds')"><button class="btn-flat btn-hover"><span>shop collection</span></button></a>
+                    </div>
+                    <img src="images/beats/Beats Flex Wireless-1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end promotion section -->
+
+<!-- product list -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest product</h2>
+            </div>
+            <div class="row" id="latest-products">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/boat/BOAT_BASSHEADS_225-2.png">
+                            <img src="images/boat/BOAT_BASSHEADS_225-1.png">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now"  onclick="transferKey('01')">shop now</button></a>
+                            </div>
+                            <div class="product-card-name">
+                                Boat bassHeads 225
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">Rs.1290</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/boat/boat_basshead_100-1.png">
+                            <img src="images/boat/boat_basshead_100-2.png">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now"  onclick="transferKey('02')">shop now</button></a>
+                            </div>
+                            <div class="product-card-name">
+                                Boat bassHeads 100
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">Rs.999</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/boat/boAt Rockerz 510 Wireless-1.png">
+                            <img src="images/boat/boAt Rockerz 510 Wireless-3.png">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now"  onclick="transferKey('03')">shop now</button></a>
+                            </div>
+                            <div class="product-card-name">
+                                Boat Rockerz 510 Wireless
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">Rs.3990</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/boat/boAt 100 Wireless-1.png">
+                            <img src="images/boat/boAt 100 Wireless-3.png">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now"  onclick="transferKey('04')">shop now</button></a>
+                            </div>
+                            <div class="product-card-name">
+                                Boat 100 Wireless
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">Rs.2990</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="col-3 col-md-6 col-sm-12">
+                                        <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/sony/Sony MDR-100AAP WIRELESS-1.png">
+                            <img src="images/sony/Sony MDR-100AAP WIRELESS-2.png">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now"  onclick="transferKey('05')">shop now</button></a>
+                            </div>
+                            <div class="product-card-name">
+                                Sony MDR-100AAP WIRELESS
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">Rs.12990</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/sony/Sony MDR-ZX310AP Wired-2.png">
+                            <img src="images/sony/Sony MDR-ZX310AP Wired-4.png">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now"  onclick="transferKey('06')">shop now</button></a>
+                            </div>
+                            <div class="product-card-name">
+                                Sony MDR-ZX310AP Wired
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">Rs.2190</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/sony/Sony WF-SP800N WIRELESS-1.png">
+                            <img src="images/sony/Sony WF-SP800N WIRELESS-2.png">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now"  onclick="transferKey('07')">shop now</button></a>
+                            </div>
+                            <div class="product-card-name">
+                                Sony WF-SP800N WIRELESS
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">Rs.18990</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="col-3 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="images/philips/PHILIPS Audio TAE1126-3.png">
+                            <img src="images/philips/PHILIPS Audio TAE1126-1.png">
+                        </div>
+                        <div class="product-card-info">
+                            <div class="product-btn">
+                                <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now"  onclick="transferKey('08')">shop now</button></a>
+                            </div>
+                            <div class="product-card-name">
+                                PHILIPS Audio TAE1126
+                            </div>
+                            <div class="product-card-price">
+                                <span class="curr-price">Rs.690</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+            <div class="section-footer">
+                <a href="products.html" class="btn-flat btn-hover">view all</a>
+            </div>
+        </div>
+    </div>
+    <!-- end product list -->
+
+    
+    <!-- footer -->
+    <footer class="bg-second" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">About us</h3>
+                    <ul class="menu">
+                        <li>UPwale.com is an ecommerce platform dealing with sales of ear and headphones.</li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Connect with us</h3>
+                    <ul class="menu">
+                        <li><i class='bx bx-mail-send'></i>support@UPWale.com</a></li>
+                        <li><i class='bx bxl-whatsapp'></i>+91-6969696969</a></li>
+                        <li><i class='bx bx-location-plus'></i>Floor 4,Commercial building,Noida-PIN 281006</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Developed By</h3>
+                    <ul class="menu">
+                        <li><a href="#"><i class='bx bxl-github'></i>Jaskirat Singh</a></li>
+                        <li><a href="#"><i class='bx bxl-github'></i>Yogesh Chaudhary</a></li>
+                        <li><a href="#"><i class='bx bxl-github'></i>Shivam Ray</a></li>
+						<li>students of</li>
+                        <li>SGTB khalsa college,du</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="contact">
+                        <h3 class="contact-header">
+                            UPWale.com
+                        </h3>
+                        <ul class="contact-socials">
+                            <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- app js -->
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/a22f660404.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/filters.js"></script>
+</body>
+
+</html>
